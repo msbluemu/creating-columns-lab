@@ -1,3 +1,5 @@
+
+
 body, html {
   width: 100%;
   height: 100%;
@@ -49,3 +51,75 @@ img:hover {
 /* create a column class! make sure all of the divs within 'container's have a class of 'column' */
 
 /* create your tile classes! we recommend .small .med .large */
+
+.column {
+  float:left;
+} 
+
+.column.small {
+  width: 30%;
+  margin-left: 20px;
+}
+
+.column.med {
+  width: 62%;
+}
+
+.row.small {
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+}
+
+.column.small img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.column.med img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.row.small img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.indifferent .column.small {
+  float: right;
+}
+
+.indifferent .row.small{
+  width: 31%;
+  display: flex;
+  flex-direction: row;;
+  margin-left: 20px;
+}
+
+
+.dubious img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 20px;
+}
+
+.large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
